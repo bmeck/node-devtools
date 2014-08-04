@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+var DebuggerInstance = require('../lib/debugger_instance');
+var DebuggerBridge = require('../lib/bridge');
+var conn = require('net').connect(5858);
+var bridge = new DebuggerBridge(conn, 'node-devtools');
+new DebuggerInstance(bridge, process.stdin, process.stdout).on('close', function (status) {
+  process.exit(status);
+});

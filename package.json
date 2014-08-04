@@ -1,0 +1,29 @@
+{
+  "name": "devtools",
+  "version": "0.0.0",
+  "description": "Developer tools built for Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bmeck/node-devtools.git"
+  },
+  "keywords": [
+    "devtools",
+    "debugger",
+    "heap",
+    "cpu",
+    "inspector",
+    "breakpoint",
+    "stacktrace"
+  ],
+  "author": "bradleymeck",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.9.0",
+    "debug": "^1.0.4",
+    "pad": "0.0.5"
+  }
+}
